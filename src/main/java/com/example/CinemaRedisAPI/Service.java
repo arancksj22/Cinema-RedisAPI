@@ -20,7 +20,11 @@ public class Service {
         return repo.findAll();
     }
 
-    public Optional<MovieModel> create(MovieModel model){
+    public MovieModel create(MovieModel model){
         return repo.save(model);
+    }
+
+    public void deleteById(Long id){
+        repo.deleteById(id);
     }
 }
