@@ -23,6 +23,9 @@ public class MovieModel {
         this.review = review;
     }
 
+    public MovieModel() {
+    }
+
     public Long getId() {
         return id;
     }
