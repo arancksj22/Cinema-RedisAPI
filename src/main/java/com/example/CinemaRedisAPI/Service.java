@@ -4,6 +4,7 @@ import javax.swing.text.html.Option;
 import java.util.List;
 import java.util.Optional;
 
+@org.springframework.stereotype.Service
 public class Service {
 
     private final MovieRepo repo;
