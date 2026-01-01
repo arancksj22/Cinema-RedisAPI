@@ -5,8 +5,10 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
+import java.io.Serializable;
+
 @Entity
-public class MovieModel {
+public class MovieModel implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
